@@ -616,7 +616,7 @@ Cette fois, tu es décidée : pour gagner du temps, essayons de voir si [[Camill
 
 &lt;!-- si l&#39;élève est passé par appel_citation_ok, le renvoyer à la question 5, sinon à choix du genre --&gt;
 
-&lt;&lt;set $score to $score +2&gt;&gt;
+&lt;&lt;set $score to $score +20&gt;&gt;
 
 &lt;!-- div 15 to 17 --&gt;</tw-passagedata><tw-passagedata pid="7" name="crochets" tags="" position="150,425" size="100,100">Tu cherches dans Google la phrase suivante en l&#39;encadrant avec des crochets : 
 [Dans l&#39;environnement, ces détritus plastiques subissent une lente dégradation photochimique, physique et/ou biologique]
@@ -857,7 +857,7 @@ Là on vient de travailler sur les appels de citation, est-ce que tu vois ce que
   &lt;/div&gt;
 
 &lt;&lt;set $visite_auteur_manque to true&gt;&gt;
-&lt;&lt;set $score to $score+2&gt;&gt;
+&lt;&lt;set $score to $score+20&gt;&gt;
 
 &lt;!-- div 35 to 37 --&gt;</tw-passagedata><tw-passagedata pid="13" name="citation_italique" tags="chinese_room" position="400,175" size="100,100">&lt;script src=&quot;https://code.jquery.com/jquery-3.6.4.min.js&quot;&gt;
 &lt;script&gt;
@@ -1640,7 +1640,7 @@ Vas-tu vraiment [[soumettre]] ton travail en l&#39;état ?
 As-tu encore besoin d&#39;une [[dernière révision]] ? 
 &lt;/div&gt;
 
-&lt;&lt;set $score to $score-2&gt;&gt;
+&lt;&lt;set $score to $score-20&gt;&gt;
 &lt;&lt;set $pixellisation to true&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="sourceimage1" tags="bibliotheque" position="1150,50" size="100,100">&lt;script src=&quot;https://code.jquery.com/jquery-3.6.4.min.js&quot;&gt;
 &lt;script&gt;
 (function () {
@@ -1720,7 +1720,7 @@ Je viens de faire la manip sur mon PC avec une image de Lama, je t&#39;envoie la
 [[Ah, ok, je vois|source_image2]].
 &lt;/div&gt;
 
-&lt;&lt;set $score to $score+1&gt;&gt;
+&lt;&lt;set $score to $score+10&gt;&gt;
 
 &lt;!-- div 100 to 109 --&gt;</tw-passagedata><tw-passagedata pid="32" name="source_image2" tags="bibliotheque" position="1150,175" size="100,100">&lt;script src=&quot;https://code.jquery.com/jquery-3.6.4.min.js&quot;&gt;
 &lt;script&gt;
@@ -1773,7 +1773,7 @@ Y&#39;a plus qu&#39;à [[soumettre|soumission]] le travail sur la plateforme de 
 A moins que tu n&#39;aies le temps pour une [[ultime révision|dernière révision]].
 &lt;/div&gt;
 
-&lt;&lt;set $score to $score-2&gt;&gt;
+&lt;&lt;set $score to $score-20&gt;&gt;
 &lt;&lt;set $déplacement to true&gt;&gt;
 </tw-passagedata><tw-passagedata pid="34" name="suite_camille" tags="chinese_room" position="650,300" size="100,100">  &lt;&lt;set $appel_citation_ok to true &gt;&gt;
 
@@ -1840,7 +1840,7 @@ Manifestement c&#39;est une erreur, [[recommence|source_image2]].
 
 &lt;&lt;set $mauvaisjournal to true&gt;&gt;
 
-&lt;&lt;set $score to $score-1&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="courrier international" tags="bibliotheque" position="1275,50" size="100,100">&lt;script src=&quot;https://code.jquery.com/jquery-3.6.4.min.js&quot;&gt;
+&lt;&lt;set $score to $score-10&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="courrier international" tags="bibliotheque" position="1275,50" size="100,100">&lt;script src=&quot;https://code.jquery.com/jquery-3.6.4.min.js&quot;&gt;
 &lt;script&gt;
 (function () {
   var i = 112;
@@ -1940,7 +1940,7 @@ Une étudiante, visiblement énervée par le bruit de votre discussion, vous jet
 &lt;/div&gt;
 
 
-&lt;&lt;set $score to $score+2&gt;&gt;
+&lt;&lt;set $score to $score+20&gt;&gt;
 
 &lt;!-- div 112 to 127 --&gt;</tw-passagedata><tw-passagedata pid="38" name="licence libre" tags="study_room hideui" position="900,425" size="100,100">&lt;script src=&quot;https://code.jquery.com/jquery-3.6.4.min.js&quot;&gt;
 &lt;script&gt;
@@ -2176,9 +2176,9 @@ Bon, voilà. Je suis sur le site. J&#39;ai uploadé mon devoir. Il ne reste plus
 
 
  &lt;&lt;if $reference_answer eq &quot;ok&quot;&gt;&gt;
-	&lt;&lt;set $score to $score+2&gt;&gt;
+	&lt;&lt;set $score to $score+20&gt;&gt;
     &lt;&lt;elseif $reference_answer eq &quot;bad&quot;&gt;&gt;
-       &lt;&lt;set $score to $score-1&gt;&gt;
+       &lt;&lt;set $score to $score-10&gt;&gt;
     &lt;&lt;else&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
@@ -2223,7 +2223,7 @@ Bon, voilà. Je suis sur le site. J&#39;ai uploadé mon devoir. Il ne reste plus
       &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
    &lt;/div&gt;
  &lt;&lt;/if&gt;&gt;
- &lt;&lt;if $score gte 5&gt;&gt;
+ &lt;&lt;if $score gte 50&gt;&gt;
      &lt;div id=&quot;129&quot; class=&quot;right-box&quot; style=&quot;display:none&quot;&gt;
 Attends... je crois qu&#39;on a le résultat en appuyant [[sur ce bouton|good_result]].
      &lt;/div&gt;
@@ -2239,9 +2239,9 @@ Attends... je crois qu&#39;on a le résultat en appuyant [[sur ce bouton|bad_res
 Non, faisons plutôt une [[dernière révision]].
 
 &lt;&lt;if ($microplastiques_2 === true &amp;&amp; $microplastiques_1 === false &amp;&amp; $microplastiques_3 === false)&gt;&gt;
-    &lt;&lt;set $score to $score + 2&gt;&gt;
+    &lt;&lt;set $score to $score + 20&gt;&gt;
 &lt;&lt;else&gt;&gt;
-    &lt;&lt;set $score to $score - 1&gt;&gt;
+    &lt;&lt;set $score to $score - 10&gt;&gt;
 &lt;&lt;/if&gt;&gt;
  
  </tw-passagedata><tw-passagedata pid="44" name="good_result" tags="" position="1275,300" size="100,100">&lt;img src=&quot;gifs/right.gif&quot; autoplay&gt;
