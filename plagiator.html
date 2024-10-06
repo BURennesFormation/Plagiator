@@ -1622,13 +1622,9 @@ Qu&#39;est-ce qui peut bien [[poser problème dans cette image|probleme_image2]]
 &lt;/script&gt;
 
 &lt;div id=&quot;99&quot; class=&quot;question-box&quot; style=&quot;display:none&quot;&gt;
-Tu envisages les trois possibilités suivantes : 
+Tu ne vois qu'une seule option possible :
+[[Il manque la source de l&#39;image |sourceimage1]].
 
-- 1. [[Elle n’est pas de bonne qualité (pixellisation)|pixellisation]].
-- 2. [[Il manque la source de l&#39;image |sourceimage1]].
-- 3. L&#39;Image n&#39;est pas assez illustrative du contexte. Cette partie traite de microplastiques qui ne sont pas visibles à l&#39;oeil nu. Il faut donc replacer l&#39;image dans la partie précédente. [[C&#39;est ça qui cloche|deplacement image]].
-
-Laquelle choisis-tu ? 
 &lt;/div&gt;
 
 &lt;!-- div 99 to 99 --&gt;</tw-passagedata><tw-passagedata pid="30" name="pixellisation" tags="bibliotheque" position="1025,300" size="100,100">&lt;div class=&quot;history-box&quot;&gt;
@@ -2079,9 +2075,9 @@ Après quelques recherches sur le web, tu trouves sur des sites différents troi
 
 Quelle image peux-tu utiliser pour illustrer ton devoir sur les microplastiques ?
 
- &lt;&lt;checkbox &quot;$microplastiques_1&quot; false true autocheck&gt;&gt; image n°1
- &lt;&lt;checkbox &quot;$microplastiques_2&quot; false true autocheck&gt;&gt; image n°2
- &lt;&lt;checkbox &quot;$microplastiques_3&quot; false true autocheck&gt;&gt; image n°3
+<<radiobutton "$choix_image" "image1" checked >> image n°1
+<<radiobutton "$choix_image" "image2">> image n°2
+<<radiobutton "$choix_image" "image3">> image n°3
  
  [[étape suivante]]</tw-passagedata><tw-passagedata pid="40" name="dernière révision" tags="" position="775,425" size="100,100">En soupirant, tu fais le bilan de ton travail :
 Un lourd travail, qui aura occupé toute ta journée.
